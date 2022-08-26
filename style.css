@@ -1,25 +1,30 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: sans-serif ; 
+    font-family: sans-serif;
 }
-body{
+
+body {
     background-image: url(./pexels.jpeg);
+    /* align-items: center; */
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     scroll-behavior: smooth;
 }
-main{
+
+main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
+
 /* a:visited{
     color: white;
 } */
 
 
-.header {opacity: 0.4;
+.header {
+    opacity: 0.4;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,27 +33,23 @@ main{
     color: white;
     background-color: rgb(37, 35, 35);
 }
-nav{
+
+nav {
     padding-right: 6rem;
+    display: flex;
+
 }
+
+
 
 main {
     margin: 0 auto;
-    
-}
-.section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 3rem 0;
-    padding: 1.5rem 0;
 
 }
 
-nav a{
+
+
+nav a {
     margin: 1rem;
     font-size: 1.25rem;
     border-bottom: 6px solid grey;
@@ -58,37 +59,51 @@ nav a{
     text-transform: capitalize;
     padding: 6px;
 }
-.header div{
+
+.header div {
     background-color: grey;
     padding: 2rem 6rem;
 
 }
-.background-image{
+
+.background-image {
     width: 100%;
     color: black;
-   display: flex;
+    display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-items: flex-start;}
+    align-items: flex-start;
+}
+
+.section {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+    padding: 1.5rem 0;
+    align-items: center;
+}
 
 .section h1 {
-    flex: 0 0 20%;
-    height: 100%;
+    height: auto;
+    width: auto;
     border: 2px solid black;
     background-color: rgba(15, 14, 14, 0.726);
     padding: 25px;
-    text-align: center;
-    color: rgb(255, 254, 254)
-    }
+    text-align: -webkit-center;
+    color: rgb(255, 254, 254);
+}
 
 
-.section p {opacity: 0.7;
-    flex: 0 0 70%;
-    border: 5px;
-    height: 2.0rem;
+.section p {
+    opacity: 0.7;
+    border: 2px;
+    width: 100%;
+    height: 100%;
     padding: 25px;
     text-align: center;
-    border-radius:100% solid black;
+    /* border-radius: 100% solid black; */
     background-color: black;
     color: white !important;
 }
@@ -98,6 +113,23 @@ nav a{
     text-decoration: underline;
 }
 
-.email {color: white;
+.email {
+    color: white;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .section {
+        flex-direction: column;
+        background-color: red;
+
+    }
+
+    .section h1 {
+        width: 100%;
+    }
+
+   nav {
+    flex-direction: column;
+   }
 }
