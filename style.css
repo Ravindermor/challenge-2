@@ -6,7 +6,7 @@
 
 body {
     background-image: url(./pexels.jpeg);
-    /* align-items: center; */
+   
     background-size: cover;
     background-repeat: no-repeat;
     scroll-behavior: smooth;
@@ -18,9 +18,7 @@ main {
     justify-content: space-between;
 }
 
-/* a:visited{
-    color: white;
-} */
+
 
 
 .header {
@@ -79,15 +77,19 @@ nav a {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    height: 100%;
+    height: 4rem;
     margin: 3rem 0;
     padding: 1.5rem 0;
-    align-items: center;
 }
 
 .section h1 {
-    height: auto;
-    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 10rem;
     border: 2px solid black;
     background-color: rgba(15, 14, 14, 0.726);
     padding: 25px;
@@ -97,13 +99,17 @@ nav a {
 
 
 .section p {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
     opacity: 0.7;
-    border: 2px;
+    border: 2px solid black;
     width: 100%;
     height: 100%;
     padding: 25px;
-    text-align: center;
-    /* border-radius: 100% solid black; */
+    text-align: inherit;
     background-color: black;
     color: white !important;
 }
